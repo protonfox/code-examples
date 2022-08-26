@@ -1,4 +1,4 @@
-# Code Examples (Unity in C#)
+# Code Examples (Unity C#)
 
 In this repository you can find examples of code I have written for different projects.
 These can include character movement, gameplay management, saving, etc.
