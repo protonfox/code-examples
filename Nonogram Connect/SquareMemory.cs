@@ -19,7 +19,7 @@ public class SquareMemory : MonoBehaviour
 
     #region Methods
 
-    public void SaveBlockAction(int player, GameObject block, string action)
+    public void SaveBlockAction(int player, GameObject block, string action) // Saves the last block the player interacted with and its current state.
     {
         if (players[player].lastTouchedBlocks.Count >= 500)
         {
@@ -37,7 +37,7 @@ public class SquareMemory : MonoBehaviour
         allBlockActions.Add(action);
     }
 
-    public void Undo(int player)
+    public void Undo(int player) // Undo the player's last action. Takes actions from a list of recorded actions and reverses it.
     {
         if (Picross.puzzleActive)
         {
@@ -60,7 +60,7 @@ public class SquareMemory : MonoBehaviour
         }
     }
 
-    public void Replay(bool play)
+    public void Replay(bool play) // Used to replay the player's action after a puzzle is finished. Shows the progress they made throughout.
     {
         if (replay)
         {
